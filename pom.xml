@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>SANSA-Template-Maven-Flink</artifactId>
 	<groupId>net.sansa-stack</groupId>
-	<version>0.3.1-SNAPSHOT</version>
+	<version>0.4.0</version>
 
 	<name>SANSA-Template-Maven-Flink</name>
 	<description>SANSA Template for Maven within Flink</description>
@@ -30,9 +30,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<scala.version>2.11.11</scala.version>
 		<scala.binary.version>2.11</scala.binary.version>
-		<flink.version>1.4.0</flink.version>
-		<sansa.version>0.3.1-SNAPSHOT</sansa.version>
-		<jena.version>3.5.0</jena.version>
+		<flink.version>1.5.0</flink.version>
+		<sansa.version>0.4.0</sansa.version>
+		<jena.version>3.7.0</jena.version>
 	</properties>
 
 
@@ -40,7 +40,7 @@
 		<!-- SANSA RDF -->
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>sansa-rdf-flink-core_${scala.binary.version}</artifactId>
+			<artifactId>sansa-rdf-flink_${scala.binary.version}</artifactId>
 			<version>${sansa.version}</version>
 		</dependency>
 
@@ -59,6 +59,11 @@
 		</dependency>
 
 		<!-- SANSA Query -->
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>sansa-query-flink_${scala.binary.version}</artifactId>
+			<version>${sansa.version}</version>
+		</dependency>
 
 		<!-- SANSA ML -->
 		<dependency>
