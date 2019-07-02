@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>SANSA-Template-Maven-Flink</artifactId>
 	<groupId>net.sansa-stack</groupId>
-	<version>0.5.1-SNAPSHOT</version>
+	<version>0.6.0-SNAPSHOT</version>
 
 	<name>SANSA-Template-Maven-Flink</name>
 	<description>SANSA Template for Maven within Flink</description>
@@ -31,12 +31,8 @@
 		<scala.version>2.11.11</scala.version>
 		<scala.binary.version>2.11</scala.binary.version>
 		<flink.version>1.8.0</flink.version>
-		<sansa.rdf.version>0.5.1-SNAPSHOT</sansa.rdf.version>
-		<sansa.owl.version>0.4.2-SNAPSHOT</sansa.owl.version>
-		<sansa.query.version>0.5.1-SNAPSHOT</sansa.query.version>
-		<sansa.inference.version>0.5.1-SNAPSHOT</sansa.inference.version>
-		<sansa.ml.version>0.5.1-SNAPSHOT</sansa.ml.version>
-		<jena.version>3.9.0</jena.version>
+		<sansa.version>${project.version}</sansa.version>
+		<jena.version>3.11.0</jena.version>
 	</properties>
 
 
@@ -45,35 +41,35 @@
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>sansa-rdf-flink_${scala.binary.version}</artifactId>
-			<version>${sansa.rdf.version}</version>
+			<version>${sansa.version}</version>
 		</dependency>
 
 		<!-- SANSA OWL -->
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>sansa-owl-flink_${scala.binary.version}</artifactId>
-			<version>${sansa.owl.version}</version>
+			<version>${sansa.version}</version>
 		</dependency>
 
 		<!-- SANSA Inference -->
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>sansa-inference-flink_${scala.binary.version}</artifactId>
-			<version>${sansa.inference.version}</version>
+			<version>${sansa.version}</version>
 		</dependency>
 
 		<!-- SANSA Query -->
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>sansa-query-flink_${scala.binary.version}</artifactId>
-			<version>${sansa.query.version}</version>
+			<version>${sansa.version}</version>
 		</dependency>
 
 		<!-- SANSA ML -->
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>sansa-ml-flink_${scala.binary.version}</artifactId>
-			<version>${sansa.ml.version}</version>
+			<version>${sansa.version}</version>
 		</dependency>
 
 		<!-- Scala -->
