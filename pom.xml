@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>SANSA-Template-Maven-Flink</artifactId>
 	<groupId>net.sansa-stack</groupId>
-	<version>0.6.0-SNAPSHOT</version>
+	<version>0.6.0</version>
 
 	<name>SANSA-Template-Maven-Flink</name>
 	<description>SANSA Template for Maven within Flink</description>
